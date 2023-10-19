@@ -4,7 +4,7 @@
  * findd - fin function for the opcode
  * @opcode: the opcode
  * @val: opcode arg
- * @sorq: if 0 stack 
+ * @sorq: if 0 stack
  * @line_num: if 1 its a q
  * Return: Nada
  */
@@ -16,7 +16,6 @@ void findd(char *opcode, char *val, int line_num, int sorq)
 	instruction_t funcstionss[] = {
 		{"push", push},
 		{"pall", pall},
-		
 		{NULL, NULL}
 	};
 

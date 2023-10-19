@@ -1,9 +1,9 @@
 #include "monty.h"
 
 /**
- * tokenizea - toknizezes 
+ * tokenizea - toknizezes
  * @buffea: the line to be tokenized
- * @line_number: line nubea
+ * @line_num: line nubea
  * @format: checks if a or stack
  * Return: Returns 0 if stack, 1 if queue.
  */
@@ -50,5 +50,4 @@ void enqueue(stack_t **q, __attribute__((unused))unsigned int linu)
 
 	tempo->next = *q;
 	(*q)->prev = tempo;
-
 }
