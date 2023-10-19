@@ -29,3 +29,22 @@ void pop(stack_t **stack, unsigned int line_numbea)
 		(*stack)->prev = NULL;
 	free(Ptr);
 }
+
+/**
+ * add - adds the top two elements of the stack
+ * @stack: double ptr to  top of stack
+ * @line_numbea: line numbea goddamit
+ */
+void add(stack_t **stack, unsigned int line_numbea)
+{
+	int resultu;
+
+	if (stack == NULL || *stack == NULL || (*stack)->next == NULL)
+		outerr(8, line_numbea, "add");
+
+	(*stack) = (*stack)->next;
+	resultu = (*stack)->n + (*stack)->prev->n;
+	(*stack)->n = resultu;
+	free((*stack)->prev);
+	(*stack)->prev = NULL;
+}
