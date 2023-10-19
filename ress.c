@@ -48,3 +48,23 @@ void add(stack_t **stack, unsigned int line_numbea)
 	free((*stack)->prev);
 	(*stack)->prev = NULL;
 }
+/**
+ * swap - swaps 2 top elements of stack
+ * @stack: double pointer to top of stack
+ * @line_numbea: Iif i had a penny everytime i ...
+ */
+void swap(stack_t **stack, unsigned int line_numbea)
+{
+	stack_t *Ptr;
+
+	if (stack == NULL || *stack == NULL || (*stack)->next == NULL)
+		outerr(8, line_numbea, "swap");
+	Ptr = (*stack)->next;
+	(*stack)->next = Ptr->next;
+	if (Ptr->next != NULL)
+		Ptr->next->prev = *stack;
+	Ptr->next = *stack;
+	(*stack)->prev = Ptr;
+	Ptr->prev = NULL;
+	*stack = Ptr;
+}

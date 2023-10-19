@@ -60,5 +60,6 @@ void outerr(int anerroru, ...);
 void nop(stack_t **stack, unsigned int lnn);
 void pop(stack_t **stack, unsigned int line_numbea);
 void add(stack_t **stack, unsigned int line_numbea);
+void swap(stack_t **stack, unsigned int line_numbea);
 
 #endif

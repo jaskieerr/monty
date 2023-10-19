@@ -20,7 +20,7 @@ void findd(char *opcode, char *val, int line_num, int sorq)
 		{"nop", nop},
 		{"pop", pop},
 		{"add", add},
-
+		{"swap", swap},
 		{NULL, NULL}
 	};
 
