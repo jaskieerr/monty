@@ -18,6 +18,7 @@ void findd(char *opcode, char *val, int line_num, int sorq)
 		{"pall", pall},
 		{"pint", pint},
 		{"nop", nop},
+		{"pop", pop},
 
 		{NULL, NULL}
 	};

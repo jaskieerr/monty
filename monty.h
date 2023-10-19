@@ -58,5 +58,6 @@ void enqueue(stack_t **q, __attribute__((unused))unsigned int linu);
 void pint(stack_t **stack, unsigned int line_numbea);
 void outerr(int anerroru, ...);
 void nop(stack_t **stack, unsigned int lnn);
+void pop(stack_t **stack, unsigned int line_numbea);
 
 #endif
