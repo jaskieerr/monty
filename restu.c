@@ -45,6 +45,6 @@ void outerr(int anerroru, ...)
 		default:
 			break;
 	}
-	free_nodes();
+	dealloc();
 	exit(EXIT_FAILURE);
 }
