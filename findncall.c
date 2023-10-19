@@ -16,6 +16,9 @@ void findd(char *opcode, char *val, int line_num, int sorq)
 	instruction_t funcstionss[] = {
 		{"push", push},
 		{"pall", pall},
+		{"pint", pint},
+		{"nop", nop},
+
 		{NULL, NULL}
 	};
 
