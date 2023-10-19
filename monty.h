@@ -1,8 +1,6 @@
 #ifndef MONTY_H
 #define MONTY_H
 
-
-
 #define _GNU_SOURCE
 #include <stdio.h>
 #include <stdlib.h>
@@ -11,7 +9,6 @@
 #include <ctype.h>
 #include <stdarg.h>
 #include <string.h>
-
 
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
@@ -24,9 +21,9 @@
  */
 typedef struct stack_s
 {
-        int n;
-        struct stack_s *prev;
-        struct stack_s *next;
+int n;
+struct stack_s *prev;
+struct stack_s *next;
 } stack_t;
 
 /**
@@ -39,8 +36,8 @@ typedef struct stack_s
  */
 typedef struct instruction_s
 {
-        char *opcode;
-        void (*f)(stack_t **stack, unsigned int line_number);
+char *opcode;
+void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
 extern stack_t *head;
@@ -58,5 +55,7 @@ void dealloc(void);
 void out_error(int erroru, ...);
 stack_t *makenode(int n);
 void enqueue(stack_t **q, __attribute__((unused))unsigned int linu);
+void pint(stack_t **stack, unsigned int line_numbea);
+void outerr(int anerroru, ...);
 
 #endif
